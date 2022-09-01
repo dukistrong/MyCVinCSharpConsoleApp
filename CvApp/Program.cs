@@ -5,7 +5,7 @@ me.Name = "Dusan";
 me.Sur = "Markovic";
 me.City = "Gospodjinci";
 me.Age = 37;
-Console.WriteLine(me.ItsMe);
+Console.WriteLine(me.ItsMe());
 Education edu = new Education("FTN Novi Sad", "Master in traffic engineering",
     "Ministry of transportation", 
     "Responsible designer of traffic signalisation",
@@ -13,7 +13,7 @@ Education edu = new Education("FTN Novi Sad", "Master in traffic engineering",
     "Responsible person for cargo transport",
     "Responsible person for passenger transport",
     "Engineering Chamber of Serbia");
-Console.WriteLine(edu.MyEducation);
+Console.WriteLine(edu.MyEducation());
 WorkExperience experience1 = new WorkExperience("Smart Traffic doo", "2022-2022",
     "Licensed traffic engineer", "Project manager", "Field work");
 WorkExperience experience2 = new WorkExperience("Verkering doo", "2016-2022",
@@ -26,6 +26,6 @@ string answer = Console.ReadLine();
 WorkExperience.PrintExperience(experiences, answer);
 Other o = new Other();
 o.Developing = "C# , Git, .NET, SQL";
-Console.WriteLine(o.JustToSay);
+Console.WriteLine(o.JustToSay());
 Contact contact = new Contact("0665334356", "eat.code.now@gmail.com");
 Console.WriteLine(contact.MyContact());

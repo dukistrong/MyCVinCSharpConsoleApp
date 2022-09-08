@@ -1,11 +1,13 @@
 ﻿using MyCVinCSharpConsoleAppLibrary;
 
+//Basic informations 
 Intro me = new Intro();
 me.Name = "Dusan";
 me.Sur = "Markovic";
 me.City = "Gospodjinci";
 me.Age = 37;
 Console.WriteLine(me.ItsMe());
+//Short version of names, titles etc. are used
 Education edu = new Education("FTN Novi Sad", "Master in traffic engineering",
     "Ministry of transportation", 
     "Responsible designer of traffic signalisation",
@@ -20,8 +22,10 @@ WorkExperience experience2 = new WorkExperience("Verkering doo", "2016-2022",
     "Traffic engineer", "Public bidding", "Field work");
 WorkExperience experience3 = new WorkExperience("Worlwide...", "2005-2016",
     "Work on Exit fest", "Hard work in Sweden", "Sumerjobs");
+//List of experiences
 List<WorkExperience>experiences = new List<WorkExperience>(){experience1, experience2, experience3};
 WorkExperience.WorkAsDev();
+//User answer about showing work experiences
 string answer = Console.ReadLine();
 WorkExperience.PrintExperience(experiences, answer);
 Other o = new Other();
